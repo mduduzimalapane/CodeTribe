@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Jost','sans-serif';
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  padding : 1.5rem
+}
+
+.logo h2 {
+  color:#5a0909
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 2rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.social_icons {
+  font-size: 1,5rem;
+  margin-top: 2rem;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+}
+.bio, .contact-info {
+  width: 50%;
+  padding: 20px;
+}
+.bio img {
+  width: 100%;
+  height: auto;
+}
+img {
+border-radius: 50%;
+}
+
+#name {
+  color:#5a0909
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  background-color: #5a0909;
+  color: aliceblue;
+  border: none;
+}
+
+.tech-stack {
+  text-align: center;
+}
+
+.tech-stack-icons {
+  font-size: 3rem;
+}
+
+.about {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.work {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.btn-job-exp {
+  width: 4rem;
+  background-color: #5a0909;
+  color: white;
+  border-radius: 1.5rem;
+  height: 1.5rem;
+  border: none;
+}
+
+.my-projects {
+  text-align: center;
+}
