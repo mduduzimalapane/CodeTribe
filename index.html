@@ -1,192 +1,187 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-left: 20px;
-        }
-        .logo img {
-            height: 50px; /* Adjust height as needed */
-        }
-        .video-container {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .video-container video {
-            width: 100%;
-            height: auto;
-        }
-        .content {
-            display: flex;
-            width: 80%;
-            margin: 20px auto;
-        }
-        .bio, .contact-info {
-            width: 50%;
-            padding: 20px;
-        }
-        .bio img {
-            width: 100%;
-            height: auto;
-        }
-        img {
-          border-radius: 50%;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        footer ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="your_logo.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="video-container">
-        <video src="your_video.mp4" controls></video>
-    </section>
-
-    <section class="content">
-        <div class="bio">
-            <h1>Mduduzi Malapane</h1>
-            <h2>About Me</h2>
-            <p>
-              As an aspiring web developer, I bring a diverse skill set and a passion for technology.</p>
-        </div>
-        <div class="contact-info">
-            <img src="me.jpg" alt="Your Photo">
-        </div>
-    </section>
-
-    <footer>
-        <ul>
-            <li><a href="https://twitter.com/MduduziKatlego">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="https://www.instagram.com/mduduzikatlego/?ref=badge">Instagram</a></li>
-        </ul>
-        <span>Email: mduduzimalapane596@gmail.com</span>
-    </footer>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5671b7e2a5.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h2>MDU</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./About.html">About Me</a></li>
-                <!-- <li><a href="#">Tech Stack</a></li> -->
-                <!-- <li><a href="#">Projects</a></li> -->
-                
-                <li><a href="./Contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="content">
-        <div class="bio">
-            <h1 id='name'>Mduduzi Malapane</h1>
-            <h2>About Me</h2>
-            <p>
-              As an aspiring web developer, I bring a diverse skill set and a passion for technology.</p>
-              <br>
-              <button class="btn">
-                Hire Me
-            </button>
-        </div>
-        <div class="contact-info">
-            <img src="me.jpg" alt="Your Photo">
-        </div>
+  
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo1.jpg" alt="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <section class="video-container">
+        <video src="your_video.mp4" controls></video>
     </section>
-    <div class="tech-stack">
-        <div class="tech-stack-content">
-           <h2>Tech Stack</h2>
-           <p>Technologies I am learning.</p>
-        </div>
-        <div class='tech-stack-icons'>
-            <i class="ri-html5-fill"></i>
-            <i class="ri-css3-fill"></i>
-            <i class="ri-javascript-fill"></i>
-        </div>
+      
     </div>
-    <div>
-        <footer>
+  </div>
+  <div class="container1">
+    <div class="header-text">
+      <!-- <p id="header-title">Web Developer</p> -->
+      <h1>Mduduzi Malapane<br><br>Hi, I'm <span>Mduduzi</span> Malapane<br>From Joburg</h1>
+      <img class="contact-info" src="images/me.jpg" alt="Your Photo">
+    </div>
+  </div>
+  <!-- ---------------about--------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user2.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>As an aspiring web developer, I bring a diverse skill set and a passion for technology.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links  " onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
             <ul>
-                <li><a href="https://twitter.com/MduduziKatlego"><i class="ri-twitter-x-line"></i></a></li>
-                <li><a href="https://github.com/mduduzimalapane"><i class="ri-github-fill"></i></a></li>
-                <li><a href="WWW.LINKEDIN.COM/IN/MDUDUZIMALAPANE-A1BA62B5"><i class="ri-linkedin-box-fill"></i></a></li>
-                
+              <li><span>Web Development</span><br>Building Web Applications</li>
+              <li><span>Data Analysis</span><br>Analysing Data</li>
+              <li><span>IT Support</span><br>Solving IT Problems</li>
             </ul>
-            <span>Email: mduduzimalapane596@gmail.com</span>
-        </footer>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023 March - Oct</span><br>IT Support Intern</li>
+              <!-- <li><span>Data Analysis</span><br>Analysing Data</li>
+              <li><span>IT Support</span><br>Solving IT Problems</li> -->
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021</span><br>Data Engineering at Umuzi</li>
+              <li><span>2019</span><br>Data Science at ExploreAI</li>
+              <li><span>2014</span><br>IT at Boston City Campus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <!-- --------------------services---------------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Data Analysis</h2>
+          <p>
+            Analysing Data
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Developing web applications
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-computer"></i>
+          <h2>IT Support</h2>
+          <p>
+            Technical support
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------portfolio---------------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/Data_work.PNG">
+          <div class="layer">
+            <h3>Data Projects</h3>
+            <p>Data related projects</p>
+               <a href="https://github.com/mduduzimalapane/Data-Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!-- <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat praesentium voluptatibus, distinctio,
+               similique voluptas consequuntur est sequi minima iste sapiente animi ad corporis debitis? Voluptates laudantium adipisci impedit dolorem saepe.</p>
+               <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat praesentium voluptatibus, distinctio,
+               similique voluptas consequuntur est sequi minima iste sapiente animi ad corporis debitis? Voluptates laudantium adipisci impedit dolorem saepe.</p>
+               <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div> -->
+        </div>
+      </div>
+      <a href="https://github.com/mduduzimalapane" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ------------------contact----------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+       <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> mduduzimalapane596@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>+27710303767</p>
+        <div class="social-icons">
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/MduduziKatlego"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/mduduzikatlego/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mduduzi-malapane-a1ba62b5/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="images/Mduduzi_Malapane_CV.pdf" download class="btn btn2">Download CV</a>
+       </div>
+       <div class="contact-right">
+        <form
+          action="https://formspree.io/f/xkndkvwg"
+          method="POST">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <div class="google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228913.22500964912!2d28.177929063570645!3d-26.301583022706392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953d7695c8bbc3%3A0xd8de45bffbe45d1d!2sBrakpan!5e0!3m2!1sen!2sza!4v1714250444427!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+       </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Mduduzi <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
-
